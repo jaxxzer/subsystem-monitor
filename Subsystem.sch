@@ -508,16 +508,16 @@ chip</description>
 <wire x1="-8.89" y1="-26.67" x2="-8.89" y2="26.67" width="0.127" layer="21"/>
 </package>
 <package name="8PIN-PLUG">
-<smd name="P$5" x="0.625" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$4" x="-0.625" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$6" x="1.875" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$3" x="-1.875" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
+<smd name="P$5" x="0.625" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$4" x="-0.625" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$6" x="1.875" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$3" x="-1.875" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
 <text x="-3.5" y="4.5" size="1.27" layer="25">&gt;Name</text>
 <text x="-3" y="-4" size="1.27" layer="27">value</text>
-<smd name="P$7" x="3.125" y="3.25" dx="0.5" dy="1.5" layer="1"/>
-<smd name="P$2" x="-3.125" y="3.25" dx="0.5" dy="1.5" layer="1"/>
-<smd name="P$8" x="4.375" y="3.25" dx="0.5" dy="1.5" layer="1"/>
-<smd name="P$1" x="-4.375" y="3.25" dx="0.5" dy="1.5" layer="1"/>
+<smd name="P$7" x="3.125" y="3.25" dx="0.762" dy="2.032" layer="1"/>
+<smd name="P$2" x="-3.125" y="3.25" dx="0.762" dy="2.032" layer="1"/>
+<smd name="P$8" x="4.375" y="3.25" dx="0.762" dy="2.032" layer="1"/>
+<smd name="P$1" x="-4.375" y="3.25" dx="0.762" dy="2.032" layer="1"/>
 <wire x1="5.875" y1="2.5" x2="5.875" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="5.875" y1="-2.5" x2="-5.875" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-5.875" y1="-2.5" x2="-5.875" y2="2.5" width="0.127" layer="21"/>
@@ -526,14 +526,14 @@ chip</description>
 <smd name="P$10" x="-6.75" y="0" dx="1.75" dy="2" layer="1"/>
 </package>
 <package name="6PIN-PLUG">
-<smd name="P$4" x="0.625" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$3" x="-0.625" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$5" x="1.875" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$2" x="-1.875" y="3.25" dx="0.5" dy="1.5" layer="1" rot="R180"/>
+<smd name="P$4" x="0.625" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$3" x="-0.625" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$5" x="1.875" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
+<smd name="P$2" x="-1.875" y="3.25" dx="0.762" dy="2.032" layer="1" rot="R180"/>
 <text x="-3.5" y="4.5" size="1.27" layer="25">&gt;Name</text>
 <text x="-3" y="-4" size="1.27" layer="27">value</text>
-<smd name="P$6" x="3.125" y="3.25" dx="0.5" dy="1.5" layer="1"/>
-<smd name="P$1" x="-3.125" y="3.25" dx="0.5" dy="1.5" layer="1"/>
+<smd name="P$6" x="3.125" y="3.25" dx="0.762" dy="2.032" layer="1"/>
+<smd name="P$1" x="-3.125" y="3.25" dx="0.762" dy="2.032" layer="1"/>
 <wire x1="4.625" y1="2.5" x2="4.625" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="4.625" y1="-2.5" x2="-4.625" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-4.625" y1="-2.5" x2="-4.625" y2="2.5" width="0.127" layer="21"/>
@@ -935,19 +935,19 @@ It has reduced top mask to make it harder to put the component on the wrong side
 </polygon>
 </symbol>
 <symbol name="MAPLE-MINI">
-<pin name="8/PWM/AIN/RX2" x="-25.4" y="2.54" length="middle"/>
-<pin name="7/AIN/SS1" x="-25.4" y="7.62" length="middle"/>
-<pin name="6/AIN/SCK1" x="-25.4" y="12.7" length="middle"/>
-<pin name="5/PWM/AIN/MISO1" x="-25.4" y="17.78" length="middle"/>
-<pin name="4/PWM/AIN/MOSI1" x="-25.4" y="22.86" length="middle"/>
-<pin name="3/PWM/AIN" x="-25.4" y="27.94" length="middle"/>
+<pin name="8/PWM/AIN/RX2" x="-25.4" y="2.54" length="middle" swaplevel="1"/>
+<pin name="7/AIN/SS1" x="-25.4" y="7.62" length="middle" swaplevel="1"/>
+<pin name="6/AIN/SCK1" x="-25.4" y="12.7" length="middle" swaplevel="1"/>
+<pin name="5/PWM/AIN/MISO1" x="-25.4" y="17.78" length="middle" swaplevel="1"/>
+<pin name="4/PWM/AIN/MOSI1" x="-25.4" y="22.86" length="middle" swaplevel="1"/>
+<pin name="3/PWM/AIN" x="-25.4" y="27.94" length="middle" swaplevel="1"/>
 <pin name="2/BOOT1" x="-25.4" y="33.02" length="middle"/>
 <pin name="1/TX3/SCL2" x="-25.4" y="38.1" length="middle"/>
 <pin name="0/RX3/SDA2" x="-25.4" y="43.18" length="middle"/>
 <pin name="VIN/MAX15V" x="-25.4" y="48.26" length="middle"/>
-<pin name="9/PWM/AIN/TX2" x="-25.4" y="-2.54" length="middle"/>
-<pin name="10/PWM/AIN" x="-25.4" y="-7.62" length="middle"/>
-<pin name="11/PWM/AIN" x="-25.4" y="-12.7" length="middle"/>
+<pin name="9/PWM/AIN/TX2" x="-25.4" y="-2.54" length="middle" swaplevel="1"/>
+<pin name="10/PWM/AIN" x="-25.4" y="-7.62" length="middle" swaplevel="1"/>
+<pin name="11/PWM/AIN" x="-25.4" y="-12.7" length="middle" swaplevel="1"/>
 <pin name="RESET" x="-25.4" y="-17.78" length="middle"/>
 <pin name="12" x="-25.4" y="-22.86" length="middle"/>
 <pin name="13" x="-25.4" y="-27.94" length="middle"/>
@@ -983,14 +983,14 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="-22.86" y1="-5.08" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
 <wire x1="22.86" y1="5.08" x2="-22.86" y2="5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="-17.78" y="10.16" length="middle" rot="R270"/>
-<pin name="P$2" x="-12.7" y="10.16" length="middle" rot="R270"/>
-<pin name="P$3" x="-7.62" y="10.16" length="middle" rot="R270"/>
-<pin name="P$4" x="-2.54" y="10.16" length="middle" rot="R270"/>
-<pin name="P$5" x="2.54" y="10.16" length="middle" rot="R270"/>
-<pin name="P$6" x="7.62" y="10.16" length="middle" rot="R270"/>
-<pin name="P$7" x="12.7" y="10.16" length="middle" rot="R270"/>
-<pin name="P$8" x="17.78" y="10.16" length="middle" rot="R270"/>
+<pin name="P$1" x="-17.78" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$2" x="-12.7" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$3" x="-7.62" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$4" x="-2.54" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$5" x="2.54" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$6" x="7.62" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$7" x="12.7" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$8" x="17.78" y="10.16" length="middle" swaplevel="1" rot="R270"/>
 <text x="-25.4" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 <symbol name="6PIN-PLUG">
@@ -998,12 +998,12 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="-17.78" y1="5.08" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="17.78" y1="5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="-12.7" y="10.16" length="middle" rot="R270"/>
-<pin name="P$2" x="-7.62" y="10.16" length="middle" rot="R270"/>
-<pin name="P$3" x="-2.54" y="10.16" length="middle" rot="R270"/>
-<pin name="P$4" x="2.54" y="10.16" length="middle" rot="R270"/>
-<pin name="P$5" x="7.62" y="10.16" length="middle" rot="R270"/>
-<pin name="P$6" x="12.7" y="10.16" length="middle" rot="R270"/>
+<pin name="P$1" x="-12.7" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$2" x="-7.62" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$3" x="-2.54" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$4" x="2.54" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$5" x="7.62" y="10.16" length="middle" swaplevel="1" rot="R270"/>
+<pin name="P$6" x="12.7" y="10.16" length="middle" swaplevel="1" rot="R270"/>
 <text x="-20.32" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 <symbol name="M04X2">
@@ -1298,7 +1298,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 <deviceset name="MAPLE-MINI">
 <gates>
-<gate name="G$1" symbol="MAPLE-MINI" x="0" y="0"/>
+<gate name="G$1" symbol="MAPLE-MINI" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="MAPLE-MINI">
@@ -1350,7 +1350,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 <deviceset name="8PIN-PLUG">
 <gates>
-<gate name="G$1" symbol="8PIN-PLUG" x="0" y="0"/>
+<gate name="G$1" symbol="8PIN-PLUG" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="8PIN-PLUG">
@@ -1372,7 +1372,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 <deviceset name="6PIN-PLUG">
 <gates>
-<gate name="G$1" symbol="6PIN-PLUG" x="0" y="0"/>
+<gate name="G$1" symbol="6PIN-PLUG" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="6PIN-PLUG">
@@ -1657,6 +1657,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C1" library="Brendan" deviceset="CAP" device="0805" value="22uF"/>
 <part name="ESP_PROG" library="Brendan" deviceset="4PIN-PLUG" device=""/>
 <part name="RS232" library="Brendan" deviceset="4PIN-PLUG" device=""/>
+<part name="JUMP1" library="Brendan" deviceset="RESISTOR" device="1206" value="0"/>
+<part name="JUMP2" library="Brendan" deviceset="RESISTOR" device="1206" value="0"/>
+<part name="JUMP3" library="Brendan" deviceset="RESISTOR" device="1206" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -1684,9 +1687,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J3" gate="G$1" x="-7.62" y="-81.28"/>
 <instance part="J4" gate="G$1" x="-7.62" y="-106.68"/>
 <instance part="U1" gate="G$1" x="193.04" y="185.42"/>
-<instance part="C1" gate="G$1" x="208.28" y="182.88"/>
+<instance part="C1" gate="G$1" x="205.74" y="172.72"/>
 <instance part="ESP_PROG" gate="G$1" x="129.54" y="170.18" rot="R90"/>
 <instance part="RS232" gate="G$1" x="162.56" y="170.18" rot="R90"/>
+<instance part="JUMP1" gate="G$1" x="33.02" y="20.32"/>
+<instance part="JUMP2" gate="G$1" x="53.34" y="20.32"/>
+<instance part="JUMP3" gate="G$1" x="73.66" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -1853,9 +1859,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<label x="53.34" y="152.4" size="1.778" layer="95"/>
+<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$5"/>
+<wire x1="63.5" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
+<label x="55.88" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -1914,16 +1920,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="165.1" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="OUT@1"/>
-<wire x1="200.66" y1="182.88" x2="205.74" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="182.88" x2="205.74" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="180.34" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="180.34" x2="220.98" y2="180.34" width="0.1524" layer="91"/>
-<junction x="208.28" y="180.34"/>
-<label x="215.9" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="POWER_MODULE" gate="G$1" pin="P$1"/>
 <wire x1="-15.24" y1="160.02" x2="-20.32" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="POWER_MODULE" gate="G$1" pin="P$2"/>
@@ -1934,14 +1930,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-20.32" y="160.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="ESP_PROG" gate="G$1" pin="P$1"/>
-<wire x1="119.38" y1="162.56" x2="106.68" y2="162.56" width="0.1524" layer="91"/>
-<label x="111.76" y="162.56" size="1.778" layer="95"/>
+<pinref part="ESP_PROG" gate="G$1" pin="P$2"/>
+<wire x1="119.38" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+<label x="111.76" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RS232" gate="G$1" pin="P$1"/>
-<wire x1="152.4" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
-<label x="144.78" y="162.56" size="1.778" layer="95"/>
+<pinref part="RS232" gate="G$1" pin="P$4"/>
+<wire x1="152.4" y1="177.8" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
+<label x="144.78" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="ADJ"/>
+<wire x1="193.04" y1="177.8" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1980,29 +1982,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="200.66" y1="185.42" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="185.42" x2="205.74" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="187.96" x2="208.28" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="187.96" x2="220.98" y2="187.96" width="0.1524" layer="91"/>
-<junction x="208.28" y="187.96"/>
 <label x="215.9" y="187.96" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="OUT@1"/>
+<wire x1="200.66" y1="182.88" x2="205.74" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="177.8" x2="205.74" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="182.88" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ESP_PROG" gate="G$1" pin="P$4"/>
-<wire x1="119.38" y1="177.8" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
-<label x="111.76" y="177.8" size="1.778" layer="95"/>
+<pinref part="ESP_PROG" gate="G$1" pin="P$1"/>
+<wire x1="119.38" y1="162.56" x2="106.68" y2="162.56" width="0.1524" layer="91"/>
+<label x="111.76" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RS232" gate="G$1" pin="P$4"/>
-<wire x1="152.4" y1="177.8" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
-<label x="144.78" y="177.8" size="1.778" layer="95"/>
+<pinref part="RS232" gate="G$1" pin="P$3"/>
+<wire x1="152.4" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
+<label x="144.78" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
 <segment>
-<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$2"/>
-<wire x1="63.5" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<label x="53.34" y="157.48" size="1.778" layer="95"/>
+<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$4"/>
+<wire x1="63.5" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
+<label x="55.88" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="8"/>
@@ -2035,9 +2037,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="10.16" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$5"/>
-<wire x1="63.5" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
-<label x="53.34" y="172.72" size="1.778" layer="95"/>
+<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$2"/>
+<wire x1="63.5" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<label x="55.88" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -2056,9 +2058,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="10.16" y="-60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$4"/>
-<wire x1="63.5" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
-<label x="53.34" y="167.64" size="1.778" layer="95"/>
+<pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
+<label x="55.88" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -2079,7 +2081,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="PIXHAWK_COMMS" gate="G$1" pin="P$3"/>
 <wire x1="63.5" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
-<label x="53.34" y="162.56" size="1.778" layer="95"/>
+<label x="55.88" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX2" class="0">
@@ -2111,9 +2113,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="121.92" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ESP_PROG" gate="G$1" pin="P$2"/>
-<wire x1="119.38" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
-<label x="111.76" y="167.64" size="1.778" layer="95"/>
+<pinref part="ESP_PROG" gate="G$1" pin="P$4"/>
+<wire x1="119.38" y1="177.8" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+<label x="111.76" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JUMP1" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<label x="20.32" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JUMP3" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="20.32" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
+<label x="81.28" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JUMP1" gate="G$1" pin="2"/>
+<pinref part="JUMP2" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="40.64" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JUMP2" gate="G$1" pin="2"/>
+<pinref part="JUMP3" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<label x="60.96" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -2140,31 +2164,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="MVOL" class="0">
 <segment>
-<pinref part="POWER_MODULE" gate="G$1" pin="P$3"/>
-<wire x1="-15.24" y1="170.18" x2="-25.4" y2="170.18" width="0.1524" layer="91"/>
-<label x="-25.4" y="170.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="7/AIN/SS1"/>
-<wire x1="175.26" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MCUR" class="0">
-<segment>
 <pinref part="POWER_MODULE" gate="G$1" pin="P$4"/>
 <wire x1="-15.24" y1="175.26" x2="-25.4" y2="175.26" width="0.1524" layer="91"/>
 <label x="-25.4" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="6/AIN/SCK1"/>
-<wire x1="175.26" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="11/PWM/AIN"/>
+<wire x1="175.26" y1="58.42" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
+<label x="165.1" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCUR" class="0">
+<segment>
+<pinref part="POWER_MODULE" gate="G$1" pin="P$3"/>
+<wire x1="-15.24" y1="170.18" x2="-25.4" y2="170.18" width="0.1524" layer="91"/>
+<label x="-25.4" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="10/PWM/AIN"/>
+<wire x1="175.26" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<label x="165.1" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX3" class="0">
 <segment>
 <pinref part="RS232" gate="G$1" pin="P$2"/>
-<wire x1="152.4" y1="167.64" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
-<label x="144.78" y="172.72" size="1.778" layer="95"/>
+<wire x1="152.4" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<label x="144.78" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="1/TX3/SCL2"/>
@@ -2174,9 +2200,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="RX3" class="0">
 <segment>
-<pinref part="RS232" gate="G$1" pin="P$3"/>
-<wire x1="152.4" y1="172.72" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
-<label x="144.78" y="167.64" size="1.778" layer="95"/>
+<pinref part="RS232" gate="G$1" pin="P$1"/>
+<wire x1="152.4" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
+<label x="144.78" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="0/RX3/SDA2"/>
