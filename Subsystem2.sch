@@ -1664,6 +1664,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1699,6 +1732,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$2" library="Brendan" deviceset="MAX3232" device=""/>
 <part name="F1" library="Brendan" deviceset="TE5" device=""/>
 <part name="F2" library="Brendan" deviceset="TE5" device=""/>
+<part name="C2" library="Brendan" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C3" library="Brendan" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C4" library="Brendan" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C5" library="Brendan" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="C6" library="Brendan" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1730,6 +1771,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$2" gate="G$1" x="111.76" y="-25.4"/>
 <instance part="F1" gate="1" x="139.7" y="-22.86"/>
 <instance part="F2" gate="1" x="139.7" y="-17.78"/>
+<instance part="C2" gate="G$1" x="71.12" y="-14.224"/>
+<instance part="C3" gate="G$1" x="88.646" y="-26.67"/>
+<instance part="C4" gate="G$1" x="81.28" y="-38.1"/>
+<instance part="C5" gate="G$1" x="71.12" y="-38.1"/>
+<instance part="GND4" gate="1" x="71.12" y="-50.8"/>
+<instance part="GND5" gate="1" x="81.28" y="-50.8"/>
+<instance part="C6" gate="G$1" x="137.16" y="0"/>
+<instance part="GND6" gate="1" x="137.16" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -1903,6 +1952,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="193.04" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
 <label x="193.04" y="167.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="-40.64" x2="71.12" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="-40.64" x2="81.28" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="-2.54" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -1951,6 +2015,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="RS232" gate="G$1" pin="P$3"/>
 <wire x1="152.4" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
 <label x="144.78" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<wire x1="127" y1="-7.62" x2="129.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="7.62" x2="137.16" y2="5.08" width="0.1524" layer="91"/>
+<label x="129.54" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -2167,6 +2240,58 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$2" gate="G$1" pin="R1IN"/>
 <pinref part="F1" gate="1" pin="1"/>
 <wire x1="127" y1="-22.86" x2="134.62" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_C1+" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="C1+"/>
+<wire x1="96.52" y1="-7.62" x2="71.12" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="-9.144" x2="71.12" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_C1-" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="C1-"/>
+<wire x1="71.12" y1="-16.764" x2="96.52" y2="-16.764" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-16.764" x2="96.52" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_C2+" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="C2+"/>
+<wire x1="96.52" y1="-22.86" x2="96.52" y2="-21.082" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-21.082" x2="88.646" y2="-21.082" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="88.646" y1="-21.082" x2="88.646" y2="-21.59" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_C2-" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="C2-"/>
+<wire x1="88.646" y1="-29.21" x2="96.52" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-29.21" x2="96.52" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_V-" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="V-"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="-33.02" x2="81.28" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M32_V+" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="V+"/>
+<wire x1="96.52" y1="-12.7" x2="88.9" y2="-12.7" width="0.1524" layer="91"/>
+<label x="86.36" y="-12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="-33.02" x2="71.12" y2="-27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="-33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
